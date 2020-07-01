@@ -1,5 +1,9 @@
 @extends('adminlte.master')
 @section('content')
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
 <table class="table table-bordered">
   <thead>                  
     <tr>
@@ -52,4 +56,7 @@
     </tr>
   </tbody>
 </table>
+</div>
+</div>
+</div>
 @endsection
