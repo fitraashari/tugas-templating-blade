@@ -17,5 +17,9 @@
 Route::get('/master', function(){
     return view('adminlte.master',['judul'=>'Master']);
 });
-Route::get('/','TemplatingController@home');
-Route::get('/data-tables','TemplatingController@data');
+Route::get('/',function(){
+    return view('home',['judul'=>'Home']);
+});
+Route::get('/data-tables', function(){
+    return view('data',['judul'=>'Data Tables']);
+});
