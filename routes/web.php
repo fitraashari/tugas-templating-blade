@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/master', function(){
+    return view('adminlte.master',['judul'=>'Master']);
 });
+Route::get('/','TemplatingController@home');
+Route::get('/data-tables','TemplatingController@data');
